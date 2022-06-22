@@ -116,10 +116,18 @@
 //        return result;
 //     }
 //     else{
-//         return result;
-        
+//         while (Math.Abs(a) > 1000){
+//         a = a / 10;
 //     }
-// }
+//         int n = Math.Abs(a) % 10;
+//         Console.WriteLine(n);
+//         return n;
+//     }}
+    
+// Console.WriteLine("Введите число");
+// int num = Convert.ToInt32(Console.ReadLine());
+// Three(num);
+
 
 // Console.Write("введите число: ");
 // int num = Convert.ToInt32(Console.ReadLine());
