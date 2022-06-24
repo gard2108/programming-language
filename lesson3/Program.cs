@@ -46,3 +46,62 @@
 // int A = Convert.ToInt32(Console.ReadLine());
 
 // Multi(A);
+
+
+
+
+
+
+
+
+// ДЗ
+
+// 1) Принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+
+// void Swap(int A){
+//     if (A/10000 == A%10 & A/1000 % 10 == A/10%10){
+//         Console.Write("Число - палиндром");
+//     }
+//     else{
+//         Console.Write("Число -не палиндром");
+//     }}
+
+// Console.Write("введите пятизначное число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+
+// Swap(num);
+
+// int A = 12345;
+// Console.Write (A/1000%10);
+
+// 2) Принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
+
+// int Pyt(int Ax,int Ay,int Az,int Bx,int By,int Bz){
+//     int res = Convert.ToInt32(Math.Abs(Math.Pow((Bx-Ax),2) + Math.Pow((By-Ay),2) + Math.Pow((Bz-Az),2)));
+//     Console.Write("длина отрезка равна " + res);
+
+//     return res;
+// }
+// Console.WriteLine("последовательно введите кординаты точки а (x,y,z) и точки b (x,y,z)");
+
+// int a = Convert.ToInt32(Console.ReadLine());
+// int b = Convert.ToInt32(Console.ReadLine());
+// int c = Convert.ToInt32(Console.ReadLine());
+// int d = Convert.ToInt32(Console.ReadLine()); 
+// int e = Convert.ToInt32(Console.ReadLine());
+// int f = Convert.ToInt32(Console.ReadLine());
+
+// int done = Pyt(a, b, c, d, e, f);
+
+// 3) Принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
+
+// void Tri(int num){
+//     for( int i=1; i<num; i++){
+//         Console.Write(Math.Pow((i),3) + " ");
+// }}
+
+// Console.WriteLine("введите любое положительное число число: ");
+// int A = Convert.ToInt32(Console.ReadLine());
+
+// Tri(A);
+
