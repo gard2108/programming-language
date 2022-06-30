@@ -34,4 +34,40 @@
 
 // Console.WriteLine("число имеет " + NumN(num) + " цифр");
 
-3) 
+методы для массива: 
+
+1) Заполнен автоматически
+
+int [] CreateRandomArray(int size)
+{
+    int[] array = new int[size];
+    for( int i = 0; i < size; i++)
+    {
+        array[i] = new Random[].Next(0,2);
+    } 
+    return array
+}
+
+2) Можно заполнить с клавиатуры
+
+int [] CreateRandomArray(int size)
+
+{
+    int[] array = new int[size];
+    for( int i = 0; i < size; i++)
+    {
+        Console.WriteLine("введите " + i " число");
+        array[i] = Convert.ToInt32(Console.ReadLine());
+    } 
+    return array
+}
+
+3) Выводит на экран массив 
+
+void ShowArray(int[] array)
+{
+    for (int i = 0; i < array.Lenght; i++)
+    {
+        Console.Write(Array[i] + " ");
+    }
+}
