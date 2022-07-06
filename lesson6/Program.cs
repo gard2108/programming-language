@@ -1,14 +1,14 @@
 ﻿// 1) Заполнен автоматически
 
-int [] CreateRandomArray(int size, int min, int max)
-{
-    int[] array = new int[size];
-        for( int i = 0; i < size; i++)
-        {
-            array[i] = new Random().Next(min,max + 1);
-        } 
-    return array;
-}
+// int [] CreateRandomArray(int size, int min, int max)
+// {
+//     int[] array = new int[size];
+//         for( int i = 0; i < size; i++)
+//         {
+//             array[i] = new Random().Next(min,max + 1);
+//         } 
+//     return array;
+// }
 
 // 2) Можно заполнить с клавиатуры
 
@@ -21,14 +21,14 @@ int [] CreateRandomArray(int size, int min, int max)
 
 // 3) Выводит на экран массив 
 
-void ShowArray(int[] array)
-{
-Console.WriteLine();
-    for (int i = 0; i < array.Length; i++)
-    {
-        Console.Write(array[i] + " ");
-    }
-}
+// void ShowArray(int[] array)
+// {
+// Console.WriteLine();
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write(array[i] + " ");
+//     }
+// }
 
 // 1) Переворачивает Массив
 
