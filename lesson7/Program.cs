@@ -1,32 +1,33 @@
 ﻿// 1) Двумерный массив заполнен автоматически
-int [,] CreateRandomDubbleArray(int m,int n, int min, int max)
-{
-    int[,] array = new int[m,n];
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
-        for( int j = 0; j < array.GetLength(1); j++)
-        {
-            array[i,j] = new Random().Next(min,max + 1);
-        } 
-    }
-    return array;
-}
+
+// int [,] CreateRandomDubbleArray(int m,int n, int min, int max)
+// {
+//     int[,] array = new int[m,n];
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for( int j = 0; j < array.GetLength(1); j++)
+//         {
+//             array[i,j] = new Random().Next(min,max + 1);
+//         } 
+//     }
+//     return array;
+// }
 
 
 // 2) Двумерный массив выводится на экран массив 
 
-void ShowDubbleArray(int[,] array)
-{
-Console.WriteLine();
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
-        for (int j = 0; j < array.GetLength(1); j++)
-        {
-            Console.Write(array[i,j] + " ");
-        }
-        Console.WriteLine();
-    }
-}
+// void ShowDubbleArray(int[,] array)
+// {
+// Console.WriteLine();
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             Console.Write(array[i,j] + " ");
+//         }
+//         Console.WriteLine();
+//     }
+// }
 
 // 1) Первое задание
 
@@ -103,3 +104,118 @@ Console.WriteLine();
 // }
 
 // Console.WriteLine(time);
+
+
+
+
+
+
+// ДЗ 
+
+// 1) Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
+// m = 3, n = 4.
+// 0,5 7 -2 -0,2
+
+// double[,] CreateRandomDubbledoubleArray(int m,int n)
+// {
+//     double[,] array = new double[m,n];
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for( int j = 0; j < array.GetLength(1); j++)
+//         {
+//             array[i,j] = new Random().NextDouble();
+//         } 
+//     }
+//     return array;
+// }
+
+// void ShowDubbledoubleArray(double[,] array)
+// {
+// Console.WriteLine();
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             // Console.Write(array[i,j] + " ");
+//             double alignNumber = Math.Round(array[i, j], 1);
+//             Console.Write(alignNumber + " ");
+//         }
+//         Console.WriteLine();
+//     }
+// }
+
+// double [,] arr = CreateRandomDubbledoubleArray(3,4);
+// ShowDubbledoubleArray(arr);
+
+
+
+// 2) На вход принимает позиции элемента в двумерном массиве,
+//  и возвращает значение этого элемента или же указание, что такого элемента нет.
+// Например, задан массив:
+// 1 4 7 2
+// 1, 7 -> такого числа в массиве нет
+
+// int m = 5;
+// int n = 5;
+
+// int [,] arr = CreateRandomDubbleArray (m,n,-10,10);
+// ShowDubbleArray(arr);
+
+//  Console.WriteLine("введите индексы нужного элемента массива: ");
+// int m1 = Convert.ToInt32(Console.ReadLine());
+// int n1 = Convert.ToInt32(Console.ReadLine());
+
+// if (m1 > m || n1 > n)  Console.WriteLine("этого элемента массива не существует");
+// else  Console.WriteLine(arr[m1,n1]);
+
+
+
+// 3) Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
+// Например, задан массив:
+// 1 4 7 2
+// Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
+
+// int [,] CreateRandomDubbleArray(int m,int n, int min, int max)
+// {
+//     int[,] array = new int[m,n];
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for( int j = 0; j < array.GetLength(1); j++)
+//         {
+//             array[i,j] = new Random().Next(min,max + 1);
+//         } 
+//     }
+//     return array;
+// }
+
+// void ShowDubbleArray(int[,] array)
+// {
+// Console.WriteLine();
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             Console.Write(array[i,j] + " ");
+//         }
+//         Console.WriteLine();
+//     }
+// }
+
+
+// int[,] arr = CreateRandomDubbleArray(5,5,0,5);
+// ShowDubbleArray(arr);
+
+// int time = 0;
+
+// for (int j = 0; j < arr.GetLength(0); j++)
+// {
+//     for (int i = 0; i < arr.GetLength(1); i++)
+//     {
+//         time += arr [i,j];
+//     }
+//      Console.Write(time + " ");
+//     time = 0;
+// }
+
+
+
