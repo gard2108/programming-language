@@ -136,9 +136,7 @@
 //     {
 //         for (int j = 0; j < array.GetLength(1); j++)
 //         {
-//             // Console.Write(array[i,j] + " ");
-//             double alignNumber = Math.Round(array[i, j], 1);
-//             Console.Write(alignNumber + " ");
+            // Console.Write($"{array[i,j]:f1} ");
 //         }
 //         Console.WriteLine();
 //     }
@@ -174,18 +172,17 @@
 // Например, задан массив:
 // 1 4 7 2
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
-
 // int [,] CreateRandomDubbleArray(int m,int n, int min, int max)
 // {
-//     int[,] array = new int[m,n];
-//     for (int i = 0; i < array.GetLength(0); i++)
+// int[,] array = new int[m,n];
+// for (int i = 0; i < array.GetLength(0); i++)
 //     {
-//         for( int j = 0; j < array.GetLength(1); j++)
+// for( int j = 0; j < array.GetLength(1); j++)
 //         {
-//             array[i,j] = new Random().Next(min,max + 1);
+// array[i,j] = new Random().Next(min,max + 1);
 //         } 
 //     }
-//     return array;
+// return array;
 // }
 
 // void ShowDubbleArray(int[,] array)
@@ -193,9 +190,9 @@
 // Console.WriteLine();
 //     for (int i = 0; i < array.GetLength(0); i++)
 //     {
-//         for (int j = 0; j < array.GetLength(1); j++)
+// for (int j = 0; j < array.GetLength(1); j++)
 //         {
-//             Console.Write(array[i,j] + " ");
+// Console.Write(array[i,j] + " ");
 //         }
 //         Console.WriteLine();
 //     }
@@ -205,17 +202,16 @@
 // int[,] arr = CreateRandomDubbleArray(5,5,0,5);
 // ShowDubbleArray(arr);
 
-// int time = 0;
+// double time = 0;
+//  int num =0;
 
 // for (int j = 0; j < arr.GetLength(0); j++)
 // {
-//     for (int i = 0; i < arr.GetLength(1); i++)
+// for (int i = 0; i < arr.GetLength(1); i++)
 //     {
-//         time += arr [i,j];
+// time += arr [i,j];
+// num = i + 1;
 //     }
-//      Console.Write(time + " ");
-//     time = 0;
+// Console.Write(time/num + " ");
+// time = 0;
 // }
-
-
-
