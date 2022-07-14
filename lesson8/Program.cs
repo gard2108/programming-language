@@ -164,32 +164,32 @@
 
 
 
-int [,] CreateRandomDoubleArray(int m,int n, int min, int max)
-{
-    int[,] array = new int[m,n];
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
-        for( int j = 0; j < array.GetLength(1); j++)
-        {
-            array[i,j] = new Random().Next(min,max + 1);
-        } 
-    }
-    return array;
-}
+// int [,] CreateRandomDoubleArray(int m,int n, int min, int max)
+// {
+//     int[,] array = new int[m,n];
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for( int j = 0; j < array.GetLength(1); j++)
+//         {
+//             array[i,j] = new Random().Next(min,max + 1);
+//         } 
+//     }
+//     return array;
+// }
 
 
-void ShowDoubleArray(int[,] array)
-{
-Console.WriteLine();
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
-        for (int j = 0; j < array.GetLength(1); j++)
-        {
-            Console.Write(array[i,j] + " ");
-        }
-        Console.WriteLine();
-    }
-}
+// void ShowDoubleArray(int[,] array)
+// {
+// Console.WriteLine();
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             Console.Write(array[i,j] + " ");
+//         }
+//         Console.WriteLine();
+//     }
+// }
 
 
 
