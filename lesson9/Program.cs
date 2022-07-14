@@ -35,4 +35,48 @@
 
 
 
+// ДЗ 
+
+// 1) Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.
+
+// int Sum ( int start, int end, int count)
+// {
+//     // count += 1;
+//     if (start == end -1) return start - count;
+//     else count += 1;
+//     return ( start + 1 + Sum (start + 1, end, count));
+   
+// }
+
+// Console.Clear();
+// Console.WriteLine("Введите Число M ");
+// int M = Convert.ToInt32(Console.ReadLine());
+
+// Console.WriteLine("Введите Число N ");
+// int N = Convert.ToInt32(Console.ReadLine());
+
+// Console.WriteLine(Sum(M,N,1));
+
+
+
+// 2) Напишите программу вычисления функции Аккермана с помощью рекурсии. Даны два неотрицательных числа m и n.
+
+// int Akkerman (int m,int n)
+// {
+//     if (m == 0) return n + 1;
+//             if (n == 0)
+//                 return Akkerman(m - 1, 1);
+//             return Akkerman(m - 1, Akkerman(m, n - 1));
+// }
+
+// Console.Clear();
+// Console.WriteLine("Введите Число M ");
+// int M = Convert.ToInt32(Console.ReadLine());
+
+// Console.WriteLine("Введите Число N ");
+// int N = Convert.ToInt32(Console.ReadLine());
+
+// Console.WriteLine(Akkerman(M,N));
+
+
 
